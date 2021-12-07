@@ -135,14 +135,34 @@ class LargeChild extends StatelessWidget {
                             );
                           },
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 12.0, top: 20),
-                          child: Text("LET'S FLY TO MARS"),
-                        ),
+
                         SizedBox(
                           height: 40,
                         ),
-                        Search()
+                        Padding(
+                          padding: const EdgeInsets.only(left: 12.0, top: 20),
+                          child: Text(
+                            "Now Repeat after me",
+                            style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.normal,
+                                fontFamily: "Montserrat-Regular",
+                                color: Color(0xFF111111)),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 12.0, top: 10),
+                          child: AnimatedTextKit(
+
+                            animatedTexts: [
+                              TypewriterAnimatedText('Go Corona! Corona Go!', textStyle: TextStyle(fontSize: 40, color: Color(0xFF8591B0)), speed: const Duration(milliseconds: 100),),
+                              TypewriterAnimatedText('Omicron ki MKB! Omicron ki MKC!',  textStyle: TextStyle(fontSize: 40, color: Color(0xFF8591B0)), speed: const Duration(milliseconds: 100)),
+                              TypewriterAnimatedText('Stay Positive! Tukbandi Ki G**d mein mt ghuso!',  textStyle: TextStyle(fontSize: 40, color: Color(0xFF8591B0)), speed: const Duration(milliseconds: 100)),
+                              TypewriterAnimatedText('Ab Padhai likhai kro! IAS vIAS bno!',  textStyle: TextStyle(fontSize: 40, color: Color(0xFF8591B0)), speed: const Duration(milliseconds: 100)),
+
+                            ],
+                          ),
+                        ),
                       ])))
         ],
       ),

@@ -75,7 +75,7 @@ class NavBar extends StatelessWidget {
                       child: Material(
                         color: Colors.transparent,
                         child: Center(
-                          child: Text("Login",
+                          child: Text("Dabaiye",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
