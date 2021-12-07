@@ -86,7 +86,7 @@ class NavBar extends StatelessWidget {
                     ),
                   )))
           else
-           IconButton(onPressed: context.read<MenuController>().controlMenu, icon: Icon(Icons.menu))
+            GestureDetector(onTap: context.read<MenuController>().controlMenu,child: Image.network("assets/icons8-menu.png", width: 50, height: 50))
         ],
       ),
     );
