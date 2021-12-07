@@ -33,6 +33,29 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBsgv9kZAip6lMxWXPImiGV2z_GqxhQLzA",
+    authDomain: "bhaigoachaltehai.firebaseapp.com",
+    projectId: "bhaigoachaltehai",
+    storageBucket: "bhaigoachaltehai.appspot.com",
+    messagingSenderId: "847257153989",
+    appId: "1:847257153989:web:8d3c6f7e4ab6e0f55e1bac",
+    measurementId: "G-7Y0WGPDCDF"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
