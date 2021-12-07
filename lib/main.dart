@@ -75,7 +75,7 @@ class LargeChild extends StatelessWidget {
             alignment: Alignment.centerRight,
             widthFactor: .6,
             // <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by stories - www.freepik.com</a>
-            child: Image.network("assets/chair.png", scale: .85),
+            child: Image.asset("assets/chair.png", scale: .85),
           ),
           FractionallySizedBox(
               alignment: Alignment.centerLeft,
@@ -231,7 +231,7 @@ class SmallChild extends StatelessWidget {
             height: 30,
           ),
           Center(
-            child: Image.network("assets/chair.png", scale: 1),
+            child: Image.asset("assets/chair.png", scale: 1),
           ),
           SizedBox(
             height: 32,
