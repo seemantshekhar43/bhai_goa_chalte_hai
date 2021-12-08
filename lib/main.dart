@@ -87,7 +87,7 @@ class LargeChild extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "Going to Goa in ...",
+                          "Taking off to Goa in ...",
                           style: TextStyle(
                               fontSize: 60,
                               fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class LargeChild extends StatelessWidget {
                               color: Color(0xFF111111)),
                         ),
                         CountdownTimer(
-                          endTime: DateTime.parse("2021-12-22 08:10:00Z")
+                          endTime: DateTime.parse("2021-12-22 08:10:00+05:30")
                               .millisecondsSinceEpoch,
                           widgetBuilder: (_, CurrentRemainingTime? time) {
                             if (time == null) {
@@ -119,7 +119,7 @@ class LargeChild extends StatelessWidget {
                             return RichText(
                               text: TextSpan(
                                 text:
-                                    '${time.days} : ${time.hours} : ${time.min} : ${time.sec} ',
+                                    '${time.days.toString().padLeft(2, '0')} : ${time.hours.toString().padLeft(2, '0')} : ${time.min.toString().padLeft(2, '0')} : ${time.sec.toString().padLeft(2, '0')} ',
                                 style: TextStyle(
                                     fontSize: 60, color: Color(0xFF8591B0)),
                                 children: [
@@ -180,7 +180,7 @@ class SmallChild extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            "Going to Goa in ...",
+            "Taking off to Goa in...",
             style: TextStyle(
                 fontSize: 60,
                 fontWeight: FontWeight.bold,
@@ -189,7 +189,7 @@ class SmallChild extends StatelessWidget {
           ),
           CountdownTimer(
             endTime:
-                DateTime.parse("2021-12-22 08:10:00Z").millisecondsSinceEpoch,
+                DateTime.parse("2021-12-22 08:10:00+05:30").millisecondsSinceEpoch,
             widgetBuilder: (_, CurrentRemainingTime? time) {
               if (time == null) {
                 return RichText(
@@ -211,7 +211,7 @@ class SmallChild extends StatelessWidget {
               return RichText(
                 text: TextSpan(
                   text:
-                      '${time.days} : ${time.hours} : ${time.min} : ${time.sec} ',
+                      '${time.days.toString().padLeft(2, '0')} : ${time.hours.toString().padLeft(2, '0')} : ${time.min.toString().padLeft(2, '0')} : ${time.sec.toString().padLeft(2, '0')} ',
                   style: TextStyle(fontSize: 60, color: Color(0xFF8591B0)),
                   children: [
                     TextSpan(

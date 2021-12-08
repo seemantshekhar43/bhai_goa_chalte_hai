@@ -19,7 +19,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 38),
+      padding: EdgeInsets.symmetric(horizontal: !ResponsiveLayout.isSmallScreen(context) ? 45: 18, vertical: 38),
       child: Row(
         // After doing Wrap with Row to the above Row,
         // below line of code doesn't seem to have effect
